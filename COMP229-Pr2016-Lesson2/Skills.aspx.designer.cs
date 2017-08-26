@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP229_Pr2016_Lesson2
-{
-
-
-    public partial class Services
-    {
+namespace COMP229_Pr2016_Lesson2 {
+    
+    
+    public partial class Skills1 {
     }
 }

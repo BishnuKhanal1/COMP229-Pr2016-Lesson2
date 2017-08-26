@@ -22,39 +22,51 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+        <!--Main Navigation -->
+        <header role="navigation">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Bishnu Khanal- A Portfolio</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                            <li id="education" runat="server"><a href="Education.aspx"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i> Education</a></li>
+                            <li id="assignments" runat="server"><a href="Assignments.aspx"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Assignments</a></li>
+                            <li id="skills" runat="server"><a href="Skills.aspx"><i class="fa fa-wrench fa-lg" aria-hidden="true"></i> Skills</a></li>
+                            <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!--Main Content -->
+        <div role="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="Default.aspx">Home</a></li>
-                        <li><a href="Products.aspx">Products</a></li>
-                        <li><a href="Services.aspx">Services</a></li>
-                        <li><a href="About.aspx">About Us</a></li>
-                        <li><a href="Contact.aspx">Contact Us</a></li>
-                    </ul>
+        </div>
+        <!--footer Bar -->
+        <footer role="contentinfo">
+            <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                    <h5>&copy; Bishnu Khanal, Winter 2017, Progress Campus, Centennial College, Toronto <br /> This page was initially created for the purpose of COMP213- Web Interface Design, and later modified as my personal portfolio.</h5>
                 </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-
-
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-
+            </nav>
+        </footer>
     </form>
     <script src="Scripts/jquery-2.2.4.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>

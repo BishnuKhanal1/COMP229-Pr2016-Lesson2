@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP229_Pr2016_Lesson2
-{
-
-
-    public partial class About
-    {
+namespace COMP229_Pr2016_Lesson2 {
+    
+    
+    public partial class Assignments1 {
     }
 }

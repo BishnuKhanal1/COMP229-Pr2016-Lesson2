@@ -4,3 +4,14 @@
 /* Student ID: 300924228 */
 /* Date: September 14, 2016 */
 /* app.css file */
+
+body { 
+    padding-bottom: 70px; 
+}
+footer{
+    color:white;
+    text-align:center;
+}
+nav{
+    background-color:maroon;
+}
